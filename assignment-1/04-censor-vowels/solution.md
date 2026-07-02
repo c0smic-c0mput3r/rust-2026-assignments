@@ -2,11 +2,5 @@
 
 ## Approach
 
-_Describe your approach here._
+walked through every char, if its in "aeiouAEIOU" i replaced it with * otherwise kept it. then replaced the original string with the new one using *s =
 
-## Edge cases handled
-
-
-## Anything special
-
-_Tricks, alternatives you considered, performance notes, etc._

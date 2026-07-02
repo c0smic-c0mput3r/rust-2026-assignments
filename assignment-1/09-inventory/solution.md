@@ -2,11 +2,6 @@
 
 ## Approach
 
-_Describe your approach here._
-
-## Edge cases handled
+for restock used a HashMap to merge both lists and added quantities for same item names. for summary just counted items and summed quantities then formatted the string
 
 
-## Anything special
-
-_Tricks, alternatives you considered, performance notes, etc._

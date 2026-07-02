@@ -1,8 +1,21 @@
 pub const ALPHABET: &str = "abcdefghijklmnopqrstuvwxyz";
 
 pub fn caesar(input: &str, shift: i32) -> String {
-    let _ = (input, shift);
-    todo!("implement caesar")
+    input.chars().map(|c|{
+        if !c.is_ascii_alphabetic(){
+            c
+        }else{
+            let q:bool= c.is_uppercase();
+           let l= c.to_lowercase().next().unwrap();
+           let pos:i32= ALPHABET.find(l).unwrap() as i32;
+           let sp=(((pos+shift)%26+26)%26) as usize;
+           let sc= ALPHABET.chars().nth(sp).unwrap();
+           if q{sc.to_uppercase().next().unwrap()}else{sc}
+
+        }
+
+    }).collect()
+
 }
 
 #[cfg(test)]

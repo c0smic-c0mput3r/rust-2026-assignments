@@ -2,11 +2,6 @@
 
 ## Approach
 
-_Describe your approach here._
-
-## Edge cases handled
+split into words, reversed the iterator, collected into vec, joined with single space
 
 
-## Anything special
-
-_Tricks, alternatives you considered, performance notes, etc._

@@ -1,7 +1,23 @@
 pub fn longest_word(sentence: &str) -> Option<&str> {
-    let _ = sentence;
-    todo!("implement longest_word")
+    let mut mx:Option<&str>=None;
+
+    for word in sentence.split_whitespace(){
+        match mx{
+            None=>mx=Some(word),
+            Some(curr_mx) if word.len()>curr_mx.len()=>mx=Some(word),
+            _=>{}
+
+        }
+    }
+    mx
+
 }
+   
+        
+
+
+
+
 
 #[cfg(test)]
 mod tests {

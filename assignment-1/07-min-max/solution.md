@@ -2,11 +2,5 @@
 
 ## Approach
 
-_Describe your approach here._
+seeded min and max with first element then looped through the rest updating them when i found something smaller or bigger, wrapped result in Some
 
-## Edge cases handled
-
-
-## Anything special
-
-_Tricks, alternatives you considered, performance notes, etc._

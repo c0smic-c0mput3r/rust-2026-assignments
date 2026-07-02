@@ -2,11 +2,5 @@
 
 ## Approach
 
-_Describe your approach here._
+for each char if its a letter i found its position in the alphabet, added the shift, wrapped it so it doesnt go out of 0-25, got the new char and fixed the case back 
 
-## Edge cases handled
-
-
-## Anything special
-
-_Tricks, alternatives you considered, performance notes, etc._

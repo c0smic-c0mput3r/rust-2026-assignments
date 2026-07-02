@@ -2,11 +2,5 @@
 
 ## Approach
 
-_Describe your approach here._
+used a HashMap to count each char. collected into a vec of tuples then sorted by frequency descending, alphabetically for ties.
 
-## Edge cases handled
-
-
-## Anything special
-
-_Tricks, alternatives you considered, performance notes, etc._

@@ -1,6 +1,24 @@
 pub fn run_length_encode(input: &str) -> Vec<(char, u32)> {
-    let _ = input;
-    todo!("implement run_length_encode")
+    let mut count=0;
+    let mut ch:char=' ';
+    let mut result:Vec<(char,u32)>=Vec::new();
+    for i in input.chars(){
+        if i==ch && count>0{
+            count+=1;
+        }else{
+            if count>0{
+                result.push((ch,count));
+            }
+            ch=i;
+            count=1;
+        }
+
+    }
+    if count>0{
+        result.push((ch,count));
+    }
+    result 
+
 }
 
 #[cfg(test)]

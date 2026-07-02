@@ -2,11 +2,4 @@
 
 ## Approach
 
-_Describe your approach here._
-
-## Edge cases handled
-
-
-## Anything special
-
-_Tricks, alternatives you considered, performance notes, etc._
+for each word i lowercased it, sorted the chars, joined them back as a string to make a key. words with same key are anagrams. grouped them in a HashMap and collected all values at the end.
